@@ -1,5 +1,11 @@
 <template>
-  <p>Please enter ID</p>
+  <section>
+    <input v-model="userID" type="text">
+    <button @click="onLoadUser">
+      Load User
+    </button>
+    <nuxt-child />
+  </section>
 </template>
 
 
